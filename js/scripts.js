@@ -31,7 +31,7 @@ function setGameElements() {
 			resultsElem.style.display = 'block';
 			break;
 		case 'ended':
-			newGameBtn.innerText = 'Jeszcze raz';
+			newGameBtn.innerText = 'Lets play again';
 			/* falls through */
 		case 'notStarted':
 			/* falls through */
@@ -47,7 +47,7 @@ var playerPointsElem = document.getElementById('js-playerPoints'),
 	computerPointsElem = document.getElementById('js-computerPoints');
 
 function newGame() {
-	player.name = prompt('Please enter your name', 'imię gracza');
+	player.name = prompt('Please enter your name', 'Player name');
 	if (player.name) {
 		player.score = computer.score = 0;
 		gameState = 'started';
